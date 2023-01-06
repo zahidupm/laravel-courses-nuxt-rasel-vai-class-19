@@ -3,9 +3,6 @@
     <h2>Home</h2>
     <slot />
   </div>
-  <ul>
-    <li v-for="user in users" :key="user.id">{{ user.name }}</li>
-  </ul>
 
   <p v-if="loading">Loading...</p>
   <ul v-else>
