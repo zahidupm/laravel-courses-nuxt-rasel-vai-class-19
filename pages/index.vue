@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>Home</h2>
-    <NuxtLink to="/about"></NuxtLink>
+    <slot />
   </div>
   <ul>
     <li v-for="user in users" :key="user.id">{{ user.name }}</li>
